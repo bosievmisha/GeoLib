@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeoLib
+namespace GeoLib.Figures
 {
     public class Triangle : IArea
     {
@@ -29,7 +29,7 @@ namespace GeoLib
         {
             double[] sides = { A, B, C };
             Array.Sort(sides);
-            if (sides[2] * sides[2] == (sides[1] * sides[1] + sides[0] * sides[0]))
+            if (sides[2] * sides[2] == sides[1] * sides[1] + sides[0] * sides[0])
                 return true;
             return false;
         }

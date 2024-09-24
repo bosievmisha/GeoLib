@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeoLib
+namespace GeoLib.Figures
 {
     public class Circle : IArea
     {

@@ -1,5 +1,6 @@
+using GeoLib.Figures;
 using NUnit.Framework.Legacy;
-using GeoLib;
+
 namespace GeoTest
 {
     [TestFixture]
