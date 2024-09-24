@@ -1,25 +1,11 @@
-﻿namespace GeoLib
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GeoLib
 {
-    public interface IArea
-    {
-        double calculateArea();
-    }
-
-    public class Circle : IArea
-    {
-        public double Radius { get; }
-
-        public Circle(double radius)
-        {
-            Radius = radius;
-        }
-
-        public double calculateArea()
-        {
-            return Math.PI * Math.Pow(Radius, 2);
-        }
-    }
-
     public class Triangle : IArea
     {
         public double A { get; }
@@ -43,9 +29,9 @@
         {
             double[] sides = { A, B, C };
             Array.Sort(sides);
-            if(sides[2] * sides[2] == (sides[1] * sides[1] + sides[0] * sides[0]))
+            if (sides[2] * sides[2] == (sides[1] * sides[1] + sides[0] * sides[0]))
                 return true;
-            return false; 
+            return false;
         }
     }
 }
